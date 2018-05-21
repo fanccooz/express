@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
+  console.log('oooooooos')
 }
 
 app.get('/', routes.index);
